@@ -3,7 +3,7 @@
 # SET ALL VMS TO LAST CHECKPOINT
 # Version 0.1
 # Starte, Shakir
-# 11/01/2019
+# 11/01/2019 
 #
 $VMList = Get-VM | select Name, State
 $VMHost = get-content env:computername
