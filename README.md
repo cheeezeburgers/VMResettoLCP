@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# VMResettoLCP
+Powershell script to reset Hyper-V VM to last checkpoint (incl. check if VM is running and option to stop them).
 
-You can use the [editor on GitHub](https://github.com/cheeezeburgers/VMResettoLCP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## What it does
+This script give you shiny bright colors and does a simple task witch a bit to much and unelegant code (but whatever works, eh?!)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## How to use
 
-```markdown
-Syntax highlighted code block
+Simply execute this .ps1 script and follow further instructions if needed.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Additional info
 
-1. Numbered
-2. List
+All your running VMs will not be reseted an listed separately at the end instead.
 
-**Bold** and _Italic_ and `Code` text
+You have two options:
+#### Option 1
+You change the script from begin with and uncomment this line:
 
-[Link](url) and ![Image](src)
+```powershell
+#  Stop-VM -Name $VM -ComputerName $VMHost
+```
+That the code looks like this:
+```powershell
+   Stop-VM -Name $VM -ComputerName $VMHost
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Option 2
+You can stop and reset them to with the displayed variable:
 
-### Jekyll Themes
+```powershell
+    . $KILLandREVERT
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cheeezeburgers/VMResettoLCP/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Please note the dot and space in front of the variable!
