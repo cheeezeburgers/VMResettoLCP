@@ -1,25 +1,25 @@
 #
 # RESETTO
 # SET ALL VMS TO LAST CHECKPOINT
-# Version 0.1
+# Version 0.1.1
 # Starte, Shakir
-# 11/01/2019 
+# 13/01/2019
 #
 $VMList = Get-VM | select Name, State
 $VMHost = get-content env:computername
 $SleepTime = 1
 Clear-Host
-For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++) 
+For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
 {
  $VM = $VMList[$VMCount].Name
- if ( !($VMdown =  $VMList[$VMCount].State -eq 'Off') ) 
+ if ( !($VMdown =  $VMList[$VMCount].State -eq 'Off') )
    {
-   Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "yellow" $VM 'still running... VM NOT REVERTED! Please stop VM first.'  
-#  Stop-VM -Name $VM -ComputerName $VMHost
+   Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "yellow" $VM 'still running... VM NOT REVERTED! Please stop VM first.'
+#  Stop-VM -Name $VM -ComputerName $VMHost -Confirm:$false
    }
    else
    {
-   Write-Host $VM 'reverted to last snapshot...' 
+   Write-Host $VM 'reverted to last snapshot...'
    sleep $SleepTime
    Get-VM -Name $VM | Foreach-Object { $_ | Get-VMSnapshot | Sort CreationTime | Select -Last 1 | Restore-VMSnapshot -Confirm:$false }
    }
@@ -29,10 +29,10 @@ For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
 Write-Host "`nREPORT:`n"
 # Liste mit zurückgesetzten Maschienen
 write-host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "green" "Successful Setback:`n"
-For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++) 
+For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
 {
  $VM = $VMList[$VMCount].Name
- if ( ($VMdown =  $VMList[$VMCount].State -eq 'Off') ) 
+ if ( ($VMdown =  $VMList[$VMCount].State -eq 'Off') )
    {
    Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "green" $VM
    }
@@ -47,7 +47,7 @@ $RVM = @()
 For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
 {
  $VM = $VMList[$VMCount].Name
- if ( !($VMdown =  $VMList[$VMCount].State -eq 'Off') ) 
+ if ( !($VMdown =  $VMList[$VMCount].State -eq 'Off') )
    {
    Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "yellow" $VM
    $RVM += $VM
@@ -58,7 +58,7 @@ For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
 }
 # Erfolgsmeldung oder (wenn min. 1 VM läuft) Hinweis zum weiteren Verfahren.
 $VMstate = Get-VM | select State
- if ( ($VMstate.State -ne 'Off') ) 
+ if ( ($VMstate.State -ne 'Off') )
    {
    Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "red" "`nIf you want to setback these VMs, please make sure to stop them first and run this script again.`nAlternative you can uncomment Line 14 to stop all running VMs while running this script again.`n"
    Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "red" 'Or you can run the command . $KILLandREVERT (including the dot and space in front).'
