@@ -1,6 +1,7 @@
 # VMResettoLCP
-Powershell script to reset Hyper-V VM to last checkpoint (incl. check if VM is running and the option to stop them).
+> Powershell script to reset Hyper-V VM to last checkpoint (incl. check if VM is running and the option to stop them).
 
+<!-- Index would be nice -->
 
 ## What it does
 This script **reset all Hyper-VM machines to their last checkpoint** (**VM Reset to** **L**ast **C**heck**p**oint), checks if a VM is running bevore doing it and gives shiny bright colored output about what it does at the moment. If done, Resetto gives you a report about succsessful reseted VMs and VMs which where not reseted because their where running. You than have the option to *stop* and *reset* them, too, with a simple variable.
