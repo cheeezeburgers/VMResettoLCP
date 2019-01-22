@@ -1,11 +1,11 @@
 #
 # RESETTO
 # SET ALL VMS TO LAST CHECKPOINT
-# Version 0.1.1
+# Version 0.1.2
 # Starte, Shakir
-# 13/01/2019
+# 22/01/2019
 #
-$VMList = Get-VM | select Name, State
+$VMList = Get-VM | Select-Object Name, State
 $VMHost = get-content env:computername
 $SleepTime = 1
 Clear-Host
@@ -20,8 +20,8 @@ For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
    else
    {
    Write-Host $VM 'reverted to last snapshot...'
-   sleep $SleepTime
-   Get-VM -Name $VM | Foreach-Object { $_ | Get-VMSnapshot | Sort CreationTime | Select -Last 1 | Restore-VMSnapshot -Confirm:$false }
+   Start-Sleep $SleepTime
+   Get-VM -Name $VM | Foreach-Object { $_ | Get-VMSnapshot | Sort-Object CreationTime | Select-Object -Last 1 | Restore-VMSnapshot -Confirm:$false }
    }
 }
 # REQUEST: Überarbeitung mit arrays um Code schlanker zu machen.
@@ -57,7 +57,7 @@ For ( $VMCount = 0; $VMCount -lt $VMList.Count; $VMCount++)
    }
 }
 # Erfolgsmeldung oder (wenn min. 1 VM läuft) Hinweis zum weiteren Verfahren.
-$VMstate = Get-VM | select State
+$VMstate = Get-VM | Select-Object State
  if ( ($VMstate.State -ne 'Off') )
    {
    Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "red" "`nIf you want to setback these VMs, please make sure to stop them first and run this script again.`nAlternative you can uncomment Line 14 to stop all running VMs while running this script again.`n"
@@ -76,8 +76,8 @@ $KILLandREVERT = {`
     if ( !($RVMdown = $VMList[$RVMCount].State -eq 'Off') )
       { Stop-VM -Name $RVM -ComputerName $VMHost -Confirm:$false
         Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "green" $RVM 'STOPPED and reverted to last snapshot...'
-        sleep $SleepTime
-        Get-VM -Name $RVM | Foreach-Object { $_ | Get-VMSnapshot | Sort CreationTime | Select -Last 1 | Restore-VMSnapshot -Confirm:$false }
+        Start-Sleep $SleepTime
+        Get-VM -Name $RVM | Foreach-Object { $_ | Get-VMSnapshot | Sort-Object CreationTime | Select-Object -Last 1 | Restore-VMSnapshot -Confirm:$false }
  # NOT WORKING PROPERLY: Write-Host $objItem.Name, $objItem.WorkingSetSize -foregroundcolor "green" "`nAll stopped and reverted to last snapshot.`n"
        }
     else {}
