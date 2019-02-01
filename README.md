@@ -1,28 +1,24 @@
+# VMResettoLCP
+> Powershell script to reset Hyper-V VM to last checkpoint (incl. check if VM is running and the option to stop them).
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [VMResettoLCP](#vmresettolcp)
   - [What it does](#what-it-does)
   - [How to use](#how-to-use)
   - [Additional info](#additional-info)
       - [Option 1](#option-1)
-      - [What `. $KILLandREVERT` does in particular](#what--killandrevert-does-in-particular)
       - [Option 2](#option-2)
   - [Known issues and future releases](#known-issues-and-future-releases)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# VMResettoLCP
-> Powershell script to reset Hyper-V VM to last checkpoint (incl. check if VM is running and the option to stop them).
-
-<!-- Index would be nice -->
-
 ## What it does
 This script **reset all Hyper-VM machines to their last checkpoint** (**VM Reset to** **L**ast **C**heck**p**oint), checks if a VM is running bevore doing it and gives shiny bright colored output about what it does at the moment. If done, Resetto gives you a report about succsessful reseted VMs and VMs which where not reseted because their where running. You than have the option to *stop* and *reset* them, too, with a simple variable.
 
 ## How to use
-Simply execute this .ps1 script and follow further instructions if needed.
+Simply execute this [.ps1](https://github.com/cheeezeburgers/VMResettoLCP/blob/master/Resetto.ps1) script and follow further instructions if needed.
 
 ## Additional info
 All your *running* VMs **will not be reseted** and listed separately at the end instead.
