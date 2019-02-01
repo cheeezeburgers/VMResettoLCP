@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [VMResettoLCP](#vmresettolcp)
+  - [What it does](#what-it-does)
+  - [How to use](#how-to-use)
+  - [Additional info](#additional-info)
+      - [Option 1](#option-1)
+      - [What `. $KILLandREVERT` does in particular](#what--killandrevert-does-in-particular)
+      - [Option 2](#option-2)
+  - [Known issues and future releases](#known-issues-and-future-releases)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # VMResettoLCP
 > Powershell script to reset Hyper-V VM to last checkpoint (incl. check if VM is running and the option to stop them).
 
