@@ -1,0 +1,4568 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.1">
+    
+    
+      
+        <title>LF 06 - Anwendungsentwicklung - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#lf-06-anwendungsentwicklung" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              My Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                LF 06 - Anwendungsentwicklung
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome to MkDocs" class="md-nav__link">
+      Welcome to MkDocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../FSMO - certbase/" title="FSMO (CertBase.de)" class="md-nav__link">
+      FSMO (CertBase.de)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Git - Grundlagen/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../GitHub - Grundlagen/" title="GitHub Manual" class="md-nav__link">
+      GitHub Manual
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../GitHub Pages - Themes/" title="Themes in GitHub Pages" class="md-nav__link">
+      Themes in GitHub Pages
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../JS Notes/" title="Webdesign Documentation" class="md-nav__link">
+      Webdesign Documentation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Jekyll - OS X install/" title="Jekyll OS X install" class="md-nav__link">
+      Jekyll   OS X install
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Markdown - Syntax Guide/" title="Markdown Syntax" class="md-nav__link">
+      Markdown Syntax
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Markdown-Cheatsheet/" title="Markdown Cheatsheet" class="md-nav__link">
+      Markdown Cheatsheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Umrechnen - bit byte Kb KB Kibi/" title="Maßeinheiten & Größen" class="md-nav__link">
+      Maßeinheiten & Größen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../_README -- Git and Documentation/" title="Project FORGE" class="md-nav__link">
+      Project FORGE
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../todo/" title="Todo" class="md-nav__link">
+      Todo
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../version-numbering/" title="Semantic Version Numbering" class="md-nav__link">
+      Semantic Version Numbering
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Anleitungen .md   Hacking
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Anleitungen .md   Hacking
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anleitungen .md - Hacking/Hacking - GFN Network/" title="ARP Spoofing Ahmed" class="md-nav__link">
+      ARP Spoofing Ahmed
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anleitungen .md   Linux
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anleitungen .md   Linux
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anleitungen .md - Linux/Install Arch Linux/" title="Install Arch Linux" class="md-nav__link">
+      Install Arch Linux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anleitungen .md - Linux/Mutt - Terminal email/" title="Gmail mit `Mutt` Terminal Email" class="md-nav__link">
+      Gmail mit `Mutt` Terminal Email
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anleitungen .md - Linux/SSH between Mac OS X and Virtual Box guest/" title="SSH between Mac OS X and Virtual Box guest" class="md-nav__link">
+      SSH between Mac OS X and Virtual Box guest
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+    
+    <label class="md-nav__link" for="nav-16">
+      Anleitungen .md   OS X
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-16">
+        Anleitungen .md   OS X
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anleitungen .md - OS X/Mutt - Terminal email/" title="Gmail mit `Mutt` Terminal Email" class="md-nav__link">
+      Gmail mit `Mutt` Terminal Email
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+    
+    <label class="md-nav__link" for="nav-17">
+      Anleitungen .md   Windows
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-17">
+        Anleitungen .md   Windows
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Anleitungen .md - Windows/Exchange - Install/" title="Exchange Install" class="md-nav__link">
+      Exchange Install
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+    
+    <label class="md-nav__link" for="nav-18">
+      LF 10   Betreuen von IT Systemen
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-18">
+        LF 10   Betreuen von IT Systemen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10 - Betreuen von IT-Systemen/LF 10 - Notes/" title="LF 10 - Notes" class="md-nav__link">
+      LF 10 - Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
+    
+    <label class="md-nav__link" for="nav-19">
+      LF 10v5   Linux   LPIC 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-19">
+        LF 10v5   Linux   LPIC 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Cockpit/" title="`Cockpit`" class="md-nav__link">
+      `Cockpit`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Cron Jobs/" title="Cron Jobs" class="md-nav__link">
+      Cron Jobs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Drucker/" title="108.4 Drucker" class="md-nav__link">
+      108.4 Drucker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Firewall/" title="Firewall in Linux" class="md-nav__link">
+      Firewall in Linux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/IP Adress - netstat ifconfig ip a/" title="Ip Adressen einstellen & Netzwerkfehler beheben" class="md-nav__link">
+      Ip Adressen einstellen & Netzwerkfehler beheben
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Krypto/" title="Prüfsummen und Signatur" class="md-nav__link">
+      Prüfsummen und Signatur
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/MariaDB/" title="MariaDB" class="md-nav__link">
+      MariaDB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Sprache/" title="Sprache" class="md-nav__link">
+      Sprache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Systemprotokolle/" title="Systemprotokollierung" class="md-nav__link">
+      Systemprotokollierung
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Systemzeit/" title="Systemzeit & NTP-Server" class="md-nav__link">
+      Systemzeit & NTP-Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/TCP Wrapper/" title="Superdaemons & TCP-Wrapper" class="md-nav__link">
+      Superdaemons & TCP-Wrapper
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/lsof/" title="Lsof" class="md-nav__link">
+      Lsof
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/root - tools/" title="`root`-Tools" class="md-nav__link">
+      `root`-Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/ssh - Daten Verschlüsselung - openSSH/" title="110.3 Daten durch Verschlüsselung schützen" class="md-nav__link">
+      110.3	Daten durch Verschlüsselung schützen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-15" type="checkbox" id="nav-19-15">
+    
+    <label class="md-nav__link" for="nav-19-15">
+      100 System
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-15">
+        100 System
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/GRUB Legacy Bootloader/" title="Bootloader Grub Legacy" class="md-nav__link">
+      Bootloader Grub Legacy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/GRUB Passwort RESET/" title="DAS ROOT-PASSWORT ZURÜCKSETZEN" class="md-nav__link">
+      DAS ROOT-PASSWORT ZURÜCKSETZEN
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/Installing GUIs on CentOS/" title="Installing GUIs on CentOS" class="md-nav__link">
+      Installing GUIs on CentOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/Kernel Modules/" title="Kernel Modules" class="md-nav__link">
+      Kernel Modules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/Monitoring/" title="Monitoring" class="md-nav__link">
+      Monitoring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/Process (ID ps) - Signale (kill jobs nohub)/" title="Process" class="md-nav__link">
+      Process
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/100 System/Systemstart/" title="Systemstart" class="md-nav__link">
+      Systemstart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-16" type="checkbox" id="nav-19-16">
+    
+    <label class="md-nav__link" for="nav-19-16">
+      130 Partitions   Filesystems
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-16">
+        130 Partitions   Filesystems
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/130 Partitions - Filesystems/Disk-Quota (inkl Übung)/" title="Disk-Quota" class="md-nav__link">
+      Disk-Quota
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/130 Partitions - Filesystems/hexdump - od/" title="`hexdump`" class="md-nav__link">
+      `hexdump`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-17" type="checkbox" id="nav-19-17">
+    
+    <label class="md-nav__link" for="nav-19-17">
+      200 Terminal   Shell   Bash
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-17">
+        200 Terminal   Shell   Bash
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/200 Terminal - Shell - Bash/Terminal - .bashrc/" title="Die `.bashrc` in der Bash Shell" class="md-nav__link">
+      Die `.bashrc` in der Bash Shell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/200 Terminal - Shell - Bash/Terminal - HELP und man/" title="Bash `help` & `man`" class="md-nav__link">
+      Bash `help` & `man`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/200 Terminal - Shell - Bash/Terminal - Prompt/" title="Prompting" class="md-nav__link">
+      Prompting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/200 Terminal - Shell - Bash/Terminal - alias/" title="`alias`" class="md-nav__link">
+      `alias`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/200 Terminal - Shell - Bash/Terminal - history/" title="Bash `history`" class="md-nav__link">
+      Bash `history`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/200 Terminal - Shell - Bash/_ Grundlagen Terminal/" title="Terminal & Bash" class="md-nav__link">
+      Terminal & Bash
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-18" type="checkbox" id="nav-19-18">
+    
+    <label class="md-nav__link" for="nav-19-18">
+      210 Commands   GNU   UNIX
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-18">
+        210 Commands   GNU   UNIX
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/210 Commands - GNU - UNIX/Device Info (proc df lsblk mount)/" title="Devices" class="md-nav__link">
+      Devices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/210 Commands - GNU - UNIX/dd - copy and convert/" title="`dd` Copy and Convert" class="md-nav__link">
+      `dd` Copy and Convert
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/210 Commands - GNU - UNIX/split - Dateien teilen/" title="Dateien teilen mit `split`" class="md-nav__link">
+      Dateien teilen mit `split`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-19" type="checkbox" id="nav-19-19">
+    
+    <label class="md-nav__link" for="nav-19-19">
+      211 Basic Commands
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-19">
+        211 Basic Commands
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/Generate Output - less cat grep head tail/" title="Generate Output in Terminal bash" class="md-nav__link">
+      Generate Output in Terminal bash
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/_Basic Commands/" title="Basic Commands" class="md-nav__link">
+      Basic Commands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/find/" title="`find`" class="md-nav__link">
+      `find`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/ls - file exploring/" title="`ls`" class="md-nav__link">
+      `ls`
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/mkdir mv cp rm - Files Directorys/" title="Commands for copy, create, move, delete Files and Directorys" class="md-nav__link">
+      Commands for copy, create, move, delete Files and Directorys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/touch - Zeitstempel ändern/" title="`touch` - Zeitstempel ändern" class="md-nav__link">
+      `touch` - Zeitstempel ändern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/211 Basic Commands/xargs/" title="`xargs`" class="md-nav__link">
+      `xargs`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-20" type="checkbox" id="nav-19-20">
+    
+    <label class="md-nav__link" for="nav-19-20">
+      220 Output   Filter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-20">
+        220 Output   Filter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/220 Output - Filter/Brace Expensions - Muster Bereiche/" title="Brace Expansion" class="md-nav__link">
+      Brace Expansion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/220 Output - Filter/Brace Expensions - Uppercase Bug/" title="WHY DOES [a-z] MATCH UPPERCASE LETTERS IN BASH?" class="md-nav__link">
+      WHY DOES [a-z] MATCH UPPERCASE LETTERS IN BASH?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/220 Output - Filter/Output - Sortierung (cut awk sort uniq)/" title="Sortierung von Output" class="md-nav__link">
+      Sortierung von Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/220 Output - Filter/Output - Verändern (tr)/" title="Output Verändern (tr)" class="md-nav__link">
+      Output   Verändern (tr)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-21" type="checkbox" id="nav-19-21">
+    
+    <label class="md-nav__link" for="nav-19-21">
+      230 Directorys
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-21">
+        230 Directorys
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/230 Directorys/FSH - File System Hierachy/" title="File System Hierarchy (**FHS**)" class="md-nav__link">
+      File System Hierarchy (**FHS**)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-22" type="checkbox" id="nav-19-22">
+    
+    <label class="md-nav__link" for="nav-19-22">
+      231 Dateirechte   Zugriffsrechte
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-22">
+        231 Dateirechte   Zugriffsrechte
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/231 Dateirechte - Zugriffsrechte/Dateiberechtigungen - chmod stat/" title="Dateiberechtigungen" class="md-nav__link">
+      Dateiberechtigungen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/231 Dateirechte - Zugriffsrechte/SUID - GUID - Sticky Bit/" title="SUID, SGID & Sticky Bit" class="md-nav__link">
+      SUID, SGID & Sticky Bit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/231 Dateirechte - Zugriffsrechte/umask/" title="`umask`" class="md-nav__link">
+      `umask`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-23" type="checkbox" id="nav-19-23">
+    
+    <label class="md-nav__link" for="nav-19-23">
+      300 User   Groups
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-23">
+        300 User   Groups
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/300 User - Groups/Benutzer User Verwaltung/" title="Benutzer \ User-Verwaltung" class="md-nav__link">
+      Benutzer \ User-Verwaltung
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-24" type="checkbox" id="nav-19-24">
+    
+    <label class="md-nav__link" for="nav-19-24">
+      400 Packet Management
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-24">
+        400 Packet Management
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/400 Packet Management/Compiling eine Programs/" title="Compiling a Program" class="md-nav__link">
+      Compiling a Program
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/400 Packet Management/rpm Package Management/" title="`rpm` Packet Manager" class="md-nav__link">
+      `rpm` Packet Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/400 Packet Management/yum/" title="`yum` Packet Manager" class="md-nav__link">
+      `yum` Packet Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-25" type="checkbox" id="nav-19-25">
+    
+    <label class="md-nav__link" for="nav-19-25">
+      500 Anwendungen   Programs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-25">
+        500 Anwendungen   Programs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/500 Anwendungen - Programs/Essential Programs/" title="Essential programs" class="md-nav__link">
+      Essential programs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/500 Anwendungen - Programs/bc - Rechner/" title="`bc` Rechner" class="md-nav__link">
+      `bc` Rechner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/500 Anwendungen - Programs/ftp/" title="FTP" class="md-nav__link">
+      FTP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/500 Anwendungen - Programs/mutt - Mail-Server (MTA)/" title="108.3 Grundlagen Mail-Server (MTA)" class="md-nav__link">
+      108.3 Grundlagen Mail-Server (MTA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/500 Anwendungen - Programs/ps to pdf/" title="`.ps` to PDF" class="md-nav__link">
+      `.ps` to PDF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/500 Anwendungen - Programs/tree/" title="`tree`" class="md-nav__link">
+      `tree`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-26" type="checkbox" id="nav-19-26">
+    
+    <label class="md-nav__link" for="nav-19-26">
+      501 Texteditor   vim
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-26">
+        501 Texteditor   vim
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/501 Texteditor - vim/vi vim - Texteditor/" title="Editor `vi` (`vim`)" class="md-nav__link">
+      Editor `vi` (`vim`)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-27" type="checkbox" id="nav-19-27">
+    
+    <label class="md-nav__link" for="nav-19-27">
+      800 Scripting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-27">
+        800 Scripting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/800 Scripting/Scripting - Installation eriner Paketliste/" title="Installation einer Paketliste" class="md-nav__link">
+      Installation einer Paketliste
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/800 Scripting/Scripting - for-in-do/" title="for-in-do" class="md-nav__link">
+      for-in-do
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/800 Scripting/Scripting - if/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-28" type="checkbox" id="nav-19-28">
+    
+    <label class="md-nav__link" for="nav-19-28">
+      Admin Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-28">
+        Admin Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Admin Tools/Cockpit/" title="`Cockpit`" class="md-nav__link">
+      `Cockpit`
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19-29" type="checkbox" id="nav-19-29">
+    
+    <label class="md-nav__link" for="nav-19-29">
+      Network
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-19-29">
+        Network
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 10v5 - Linux - LPIC-1/Network/Firewall/" title="Firewall in Linux" class="md-nav__link">
+      Firewall in Linux
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-20" type="checkbox" id="nav-20" checked>
+    
+    <label class="md-nav__link" for="nav-20">
+      LF 6   Anwendungsentwicklung
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-20">
+        LF 6   Anwendungsentwicklung
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        LF 06 - Anwendungsentwicklung
+      </label>
+    
+    <a href="./" title="LF 06 - Anwendungsentwicklung" class="md-nav__link md-nav__link--active">
+      LF 06 - Anwendungsentwicklung
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#index" title="Index" class="md-nav__link">
+    Index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-basic" title="Visual Basic" class="md-nav__link">
+    Visual Basic
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-vs-compiler" title="Interpreter vs. Compiler" class="md-nav__link">
+    Interpreter vs. Compiler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dim" title="Dim" class="md-nav__link">
+    Dim
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nassi-shneiderman-diagramm" title="Nassi-Shneiderman-Diagramm" class="md-nav__link">
+    Nassi-Shneiderman-Diagramm
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sinnbilder" title="Sinnbilder" class="md-nav__link">
+    Sinnbilder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datentypen-vba" title="Datentypen VBA" class="md-nav__link">
+    Datentypen VBA
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabelle" title="Tabelle" class="md-nav__link">
+    Tabelle
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#genauigkeit-von-gleitkommazahl-typen" title="Genauigkeit von Gleitkommazahl-Typen" class="md-nav__link">
+    Genauigkeit von Gleitkommazahl-Typen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ganzzahlige-datentypen" title="Ganzzahlige Datentypen" class="md-nav__link">
+    Ganzzahlige Datentypen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#byte" title="byte" class="md-nav__link">
+    byte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short" title="short" class="md-nav__link">
+    short
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int" title="int" class="md-nav__link">
+    int
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#long" title="long" class="md-nav__link">
+    long
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datentypen-zur-speicherung-von-gleitkommazahlen" title="Datentypen zur Speicherung von Gleitkommazahlen" class="md-nav__link">
+    Datentypen zur Speicherung von Gleitkommazahlen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#float" title="float" class="md-nav__link">
+    float
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double" title="double" class="md-nav__link">
+    double
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolsche-werte" title="Boolsche Werte" class="md-nav__link">
+    Boolsche Werte
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean" title="boolean" class="md-nav__link">
+    boolean
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeichen" title="Zeichen" class="md-nav__link">
+    Zeichen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#char" title="char" class="md-nav__link">
+    char
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeichenketten" title="Zeichenketten" class="md-nav__link">
+    Zeichenketten
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string" title="String" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escape-sequenzen" title="Escape Sequenzen" class="md-nav__link">
+    Escape Sequenzen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-programme" title="Beispiel Programme" class="md-nav__link">
+    Beispiel Programme
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-eingabetest" title="Beispiel Eingabetest" class="md-nav__link">
+    Beispiel Eingabetest
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#struktugramm" title="Struktugramm" class="md-nav__link">
+    Struktugramm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp-addieren" title="Bsp.: Addieren" class="md-nav__link">
+    Bsp.: Addieren
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#struktugramm_1" title="Struktugramm" class="md-nav__link">
+    Struktugramm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#einfache-und-zweifache-verzweigung" title="Einfache und Zweifache Verzweigung" class="md-nav__link">
+    Einfache und Zweifache Verzweigung
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einfache" title="Einfache" class="md-nav__link">
+    Einfache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zweifache" title="Zweifache" class="md-nav__link">
+    Zweifache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp" title="Bsp.:" class="md-nav__link">
+    Bsp.:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fallauswahl" title="Fallauswahl" class="md-nav__link">
+    Fallauswahl
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bsp-notenpogramm" title="Bsp.: Notenpogramm" class="md-nav__link">
+    Bsp.: Notenpogramm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-losung-mit-switch" title="Alternative Lösung mit Switch" class="md-nav__link">
+    Alternative Lösung mit Switch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zahlerschleife" title="Zählerschleife" class="md-nav__link">
+    Zählerschleife
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beisp" title="Beisp.:" class="md-nav__link">
+    Beisp.:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endlosschleife" title="Endlosschleife" class="md-nav__link">
+    Endlosschleife
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zahler-mit-input" title="Zähler mit Input" class="md-nav__link">
+    Zähler mit Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spiel-zahlenraten" title="Spiel: Zahlenraten" class="md-nav__link">
+    Spiel: Zahlenraten
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-function" title="Random Function" class="md-nav__link">
+    Random Function
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-spiel" title="Beispiel Spiel" class="md-nav__link">
+    Beispiel Spiel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ascii-code" title="ASCII Code" class="md-nav__link">
+    ASCII Code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bsp-in-vb" title="Bsp.: in VB" class="md-nav__link">
+    Bsp.: in VB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random-ascii-zeichen-ausgeben" title="Random ASCII Zeichen ausgeben" class="md-nav__link">
+    Random ASCII Zeichen ausgeben
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp-passwortgenerator" title="Bsp.: Passwortgenerator" class="md-nav__link">
+    Bsp.: Passwortgenerator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kopfgesteuerte-schleife" title="Kopfgesteuerte Schleife" class="md-nav__link">
+    Kopfgesteuerte Schleife
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fugesteuerte-schleife" title="Fußgesteuerte Schleife" class="md-nav__link">
+    Fußgesteuerte Schleife
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bsp-passwortgenerator-fur-excell" title="Bsp.: Passwortgenerator für Excell" class="md-nav__link">
+    Bsp.: Passwortgenerator für Excell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp-passwort-mit-bedingungen" title="Bsp.: Passwort mit Bedingungen" class="md-nav__link">
+    Bsp.: Passwort mit Bedingungen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung" title="Übung" class="md-nav__link">
+    Übung
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21">
+    
+    <label class="md-nav__link" for="nav-21">
+      LF 6   SQL
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-21">
+        LF 6   SQL
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 6 - SQL/SQL - MS SQL Servermanagement Studio 18/" title="Microsoft SQL Servermanagement Studio 18" class="md-nav__link">
+      Microsoft SQL Servermanagement Studio 18
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-22" type="checkbox" id="nav-22">
+    
+    <label class="md-nav__link" for="nav-22">
+      LF 9   Öffentliche Netze
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-22">
+        LF 9   Öffentliche Netze
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/FW - Sophos UTM 9/" title="Netzwerk mit Firewall (Sophos UTM 9)" class="md-nav__link">
+      Netzwerk mit Firewall (Sophos UTM 9)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/Glossar - MTU - OSI Layer 3/" title="MTU (Maximum Transmission Unit)" class="md-nav__link">
+      MTU (Maximum Transmission Unit)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/Glossar - Netzwerk Begriffe/" title="Glossar Begriffe Netzwerk" class="md-nav__link">
+      Glossar Begriffe Netzwerk
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/Glossar - Netzwerk Software/" title="Glossar Netzwerk Software" class="md-nav__link">
+      Glossar Netzwerk Software
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/Notizen - LF 09 - Öffentliche Netzwerke/" title="LF 9 - Öffentliche Netzwerke" class="md-nav__link">
+      LF 9 - Öffentliche Netzwerke
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/OSI - Model Tabelle/" title="OSI Übersicht" class="md-nav__link">
+      OSI Übersicht
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../LF 9 - Öffentliche Netze/Wireshark - LF09 Notizen/" title="Wireshark & Zenmap" class="md-nav__link">
+      Wireshark & Zenmap
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-23" type="checkbox" id="nav-23">
+    
+    <label class="md-nav__link" for="nav-23">
+      Powershell .md
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-23">
+        Powershell .md
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - Computer-Domain-hinzufügen/" title="Computer Hostnamen und Domain" class="md-nav__link">
+      Computer Hostnamen und Domain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - GPO Export-Backup-Restore/" title="Export, Backup Restore GPOs" class="md-nav__link">
+      Export, Backup Restore GPOs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - GPO/" title="GPO (Group Policy Organisation)" class="md-nav__link">
+      GPO (Group Policy Organisation)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - Install New AD DS Server/" title="Install New AD Server with Powershell" class="md-nav__link">
+      Install New AD Server with Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - Neues-Netzwerk-Anleitung/" title="Ein neues AD-Gesteuertes Netzwerk aufbauen mit Windows Server 2016" class="md-nav__link">
+      Ein neues AD-Gesteuertes Netzwerk aufbauen mit Windows Server 2016
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - New User/" title="AD-User erstellen mit Powershell" class="md-nav__link">
+      AD-User erstellen mit Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/AD - Zertifikate/" title="Zertifikate" class="md-nav__link">
+      Zertifikate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/DC - Upgrade Migration Server ADDS/" title="Migration von Windows Server" class="md-nav__link">
+      Migration von Windows Server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/DC Einrichten - DNS - ADDS - Manual - Guide/" title="New DC-Server Setup" class="md-nav__link">
+      New DC-Server Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/DHCP - Powershell/" title="DHCP einrichten mit Powershell" class="md-nav__link">
+      DHCP einrichten mit Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/DNS - Adapter Setting/" title="DNS auf dem Netadapter einstellen" class="md-nav__link">
+      DNS auf dem Netadapter einstellen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/DNS - Troubleshooting/" title="DNS Troubleshooting" class="md-nav__link">
+      DNS Troubleshooting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/Firewall - Settings - Ping/" title="Firewall Settings mit Powershell & cmd" class="md-nav__link">
+      Firewall Settings mit Powershell & cmd
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - $env - Umgebungsvariablen/" title="Powershells Umgebungsvariablen ($env: )" class="md-nav__link">
+      Powershells Umgebungsvariablen ($env: )
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Lizenz Manager/" title="Windows Lizenz checken & erneuern" class="md-nav__link">
+      Windows Lizenz checken & erneuern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Netzwerkverbindung - IP DHCP DNS - einstellen/" title="Netzwerkverbindung einstellen" class="md-nav__link">
+      Netzwerkverbindung einstellen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Programme aufrufen öffnen/" title="Anwendungen aufrufen mit Powershell" class="md-nav__link">
+      Anwendungen aufrufen mit Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Remote Session - Befehle Importieren - Invoke - Remote/" title="PS-Session Befehle Importieren" class="md-nav__link">
+      PS-Session Befehle Importieren
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Remote Session/" title="Remote Session mit Powershell" class="md-nav__link">
+      Remote Session mit Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Top like Server Monitor/" title="`top` like Server Monitor" class="md-nav__link">
+      `top` like Server Monitor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/PS - Win Services - Restart - Stop/" title="Windows Services finden, stopen, neustarten" class="md-nav__link">
+      Windows Services finden, stopen, neustarten
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/VM - AutomatedLab Lab Install/" title="Install VM mit AutomatedLab (GitHub)" class="md-nav__link">
+      Install VM mit AutomatedLab (GitHub)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/VM - Basics/" title="VM Powershell Basics" class="md-nav__link">
+      VM Powershell Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/VM - Leistung Settings/" title="Leistung einer VM einstellen" class="md-nav__link">
+      Leistung einer VM einstellen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/VM - NetAdapter - Netzwerkkarten/" title="VM Network Adapter in Powershell" class="md-nav__link">
+      VM Network Adapter in Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/VM - Switch Settings/" title="Hyper-V Switches via Powershell" class="md-nav__link">
+      Hyper-V Switches via Powershell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Powershell .md/VM - Verschieben - Vegleichen/" title="Eine VM auf anderen Host verschieben" class="md-nav__link">
+      Eine VM auf anderen Host verschieben
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
+    
+    <label class="md-nav__link" for="nav-24">
+      VirtualBox   OS X
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-24">
+        VirtualBox   OS X
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../VirtualBox - OS X/VBoxManage/" title="Manage Virtual Box VMs" class="md-nav__link">
+      Manage Virtual Box VMs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#index" title="Index" class="md-nav__link">
+    Index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-basic" title="Visual Basic" class="md-nav__link">
+    Visual Basic
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-vs-compiler" title="Interpreter vs. Compiler" class="md-nav__link">
+    Interpreter vs. Compiler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dim" title="Dim" class="md-nav__link">
+    Dim
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nassi-shneiderman-diagramm" title="Nassi-Shneiderman-Diagramm" class="md-nav__link">
+    Nassi-Shneiderman-Diagramm
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sinnbilder" title="Sinnbilder" class="md-nav__link">
+    Sinnbilder
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datentypen-vba" title="Datentypen VBA" class="md-nav__link">
+    Datentypen VBA
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabelle" title="Tabelle" class="md-nav__link">
+    Tabelle
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#genauigkeit-von-gleitkommazahl-typen" title="Genauigkeit von Gleitkommazahl-Typen" class="md-nav__link">
+    Genauigkeit von Gleitkommazahl-Typen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ganzzahlige-datentypen" title="Ganzzahlige Datentypen" class="md-nav__link">
+    Ganzzahlige Datentypen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#byte" title="byte" class="md-nav__link">
+    byte
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short" title="short" class="md-nav__link">
+    short
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int" title="int" class="md-nav__link">
+    int
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#long" title="long" class="md-nav__link">
+    long
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datentypen-zur-speicherung-von-gleitkommazahlen" title="Datentypen zur Speicherung von Gleitkommazahlen" class="md-nav__link">
+    Datentypen zur Speicherung von Gleitkommazahlen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#float" title="float" class="md-nav__link">
+    float
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double" title="double" class="md-nav__link">
+    double
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolsche-werte" title="Boolsche Werte" class="md-nav__link">
+    Boolsche Werte
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean" title="boolean" class="md-nav__link">
+    boolean
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeichen" title="Zeichen" class="md-nav__link">
+    Zeichen
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#char" title="char" class="md-nav__link">
+    char
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zeichenketten" title="Zeichenketten" class="md-nav__link">
+    Zeichenketten
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string" title="String" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escape-sequenzen" title="Escape Sequenzen" class="md-nav__link">
+    Escape Sequenzen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beispiel-programme" title="Beispiel Programme" class="md-nav__link">
+    Beispiel Programme
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-eingabetest" title="Beispiel Eingabetest" class="md-nav__link">
+    Beispiel Eingabetest
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#struktugramm" title="Struktugramm" class="md-nav__link">
+    Struktugramm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp-addieren" title="Bsp.: Addieren" class="md-nav__link">
+    Bsp.: Addieren
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#struktugramm_1" title="Struktugramm" class="md-nav__link">
+    Struktugramm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#einfache-und-zweifache-verzweigung" title="Einfache und Zweifache Verzweigung" class="md-nav__link">
+    Einfache und Zweifache Verzweigung
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einfache" title="Einfache" class="md-nav__link">
+    Einfache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zweifache" title="Zweifache" class="md-nav__link">
+    Zweifache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp" title="Bsp.:" class="md-nav__link">
+    Bsp.:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fallauswahl" title="Fallauswahl" class="md-nav__link">
+    Fallauswahl
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bsp-notenpogramm" title="Bsp.: Notenpogramm" class="md-nav__link">
+    Bsp.: Notenpogramm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-losung-mit-switch" title="Alternative Lösung mit Switch" class="md-nav__link">
+    Alternative Lösung mit Switch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zahlerschleife" title="Zählerschleife" class="md-nav__link">
+    Zählerschleife
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beisp" title="Beisp.:" class="md-nav__link">
+    Beisp.:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endlosschleife" title="Endlosschleife" class="md-nav__link">
+    Endlosschleife
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zahler-mit-input" title="Zähler mit Input" class="md-nav__link">
+    Zähler mit Input
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spiel-zahlenraten" title="Spiel: Zahlenraten" class="md-nav__link">
+    Spiel: Zahlenraten
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#random-function" title="Random Function" class="md-nav__link">
+    Random Function
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beispiel-spiel" title="Beispiel Spiel" class="md-nav__link">
+    Beispiel Spiel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ascii-code" title="ASCII Code" class="md-nav__link">
+    ASCII Code
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bsp-in-vb" title="Bsp.: in VB" class="md-nav__link">
+    Bsp.: in VB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random-ascii-zeichen-ausgeben" title="Random ASCII Zeichen ausgeben" class="md-nav__link">
+    Random ASCII Zeichen ausgeben
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp-passwortgenerator" title="Bsp.: Passwortgenerator" class="md-nav__link">
+    Bsp.: Passwortgenerator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kopfgesteuerte-schleife" title="Kopfgesteuerte Schleife" class="md-nav__link">
+    Kopfgesteuerte Schleife
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fugesteuerte-schleife" title="Fußgesteuerte Schleife" class="md-nav__link">
+    Fußgesteuerte Schleife
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bsp-passwortgenerator-fur-excell" title="Bsp.: Passwortgenerator für Excell" class="md-nav__link">
+    Bsp.: Passwortgenerator für Excell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bsp-passwort-mit-bedingungen" title="Bsp.: Passwort mit Bedingungen" class="md-nav__link">
+    Bsp.: Passwort mit Bedingungen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung" title="Übung" class="md-nav__link">
+    Übung
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="lf-06-anwendungsentwicklung">LF 06 - Anwendungsentwicklung</h1>
+<h2 id="index">Index</h2>
+<ul>
+<li><a href="#LF-06---Anwendungsentwicklung">LF 06 - Anwendungsentwicklung</a></li>
+<li><a href="#Index">Index</a></li>
+<li><a href="#Visual-Basic">Visual Basic</a><ul>
+<li><a href="#Interpreter-vs-Compiler">Interpreter vs. Compiler</a></li>
+<li><a href="#Dim">Dim</a></li>
+</ul>
+</li>
+<li><a href="#Nassi-Shneiderman-Diagramm">Nassi-Shneiderman-Diagramm</a><ul>
+<li><a href="#Sinnbilder">Sinnbilder</a></li>
+</ul>
+</li>
+<li><a href="#Datentypen-VBA">Datentypen VBA</a><ul>
+<li><a href="#Tabelle">Tabelle</a></li>
+<li><a href="#Genauigkeit-von-Gleitkommazahl-Typen">Genauigkeit von Gleitkommazahl-Typen</a></li>
+<li><a href="#Ganzzahlige-Datentypen">Ganzzahlige Datentypen</a></li>
+<li><a href="#byte">byte</a></li>
+<li><a href="#short">short</a></li>
+<li><a href="#int">int</a></li>
+<li><a href="#long">long</a></li>
+<li><a href="#Datentypen-zur-Speicherung-von-Gleitkommazahlen">Datentypen zur Speicherung von Gleitkommazahlen</a></li>
+<li><a href="#float">float</a></li>
+<li><a href="#double">double</a></li>
+<li><a href="#Boolsche-Werte">Boolsche Werte</a></li>
+<li><a href="#boolean">boolean</a></li>
+<li><a href="#Zeichen">Zeichen</a></li>
+<li><a href="#char">char</a></li>
+<li><a href="#Zeichenketten">Zeichenketten</a></li>
+<li><a href="#String">String</a></li>
+</ul>
+</li>
+<li><a href="#Escape-Sequenzen">Escape Sequenzen</a></li>
+<li><a href="#Beispiel-Programme">Beispiel Programme</a><ul>
+<li><a href="#Beispiel-Eingabetest">Beispiel Eingabetest</a></li>
+<li><a href="#Struktugramm">Struktugramm</a></li>
+<li><a href="#Bsp-Addieren">Bsp.: Addieren</a></li>
+<li><a href="#Struktugramm-1">Struktugramm</a></li>
+</ul>
+</li>
+<li><a href="#Einfache-und-Zweifache-Verzweigung">Einfache und Zweifache Verzweigung</a><ul>
+<li><a href="#Einfache">Einfache</a></li>
+<li><a href="#Zweifache">Zweifache</a></li>
+<li><a href="#Bsp">Bsp.:</a></li>
+</ul>
+</li>
+<li><a href="#Fallauswahl">Fallauswahl</a><ul>
+<li><a href="#Bsp-Notenpogramm">Bsp.: Notenpogramm</a></li>
+<li><a href="#Alternative-L%C3%B6sung-mit-Switch">Alternative Lösung mit Switch</a></li>
+</ul>
+</li>
+<li><a href="#Z%C3%A4hlerschleife">Zählerschleife</a><ul>
+<li><a href="#Syntax">Syntax</a></li>
+<li><a href="#Beisp">Beisp.:</a></li>
+<li><a href="#Endlosschleife">Endlosschleife</a></li>
+<li><a href="#Z%C3%A4hler-mit-Input">Zähler mit Input</a></li>
+<li><a href="#Spiel-Zahlenraten">Spiel: Zahlenraten</a></li>
+</ul>
+</li>
+<li><a href="#Random-Function">Random Function</a><ul>
+<li><a href="#Beispiel-Spiel">Beispiel Spiel</a></li>
+<li><a href="#ASCII-Code">ASCII Code</a></li>
+<li><a href="#Bsp-in-VB">Bsp.: in VB</a></li>
+<li><a href="#Random-ASCII-Zeichen-ausgeben">Random ASCII Zeichen ausgeben</a></li>
+<li><a href="#Bsp-Passwortgenerator">Bsp.: Passwortgenerator</a></li>
+</ul>
+</li>
+<li><a href="#Kopfgesteuerte-Schleife">Kopfgesteuerte Schleife</a></li>
+<li><a href="#Fu%C3%9Fgesteuerte-Schleife">Fußgesteuerte Schleife</a><ul>
+<li><a href="#Bsp-Passwortgenerator-f%C3%BCr-Excell">Bsp.: Passwortgenerator für Excell</a></li>
+<li><a href="#Bsp-Passwort-mit-Bedingungen">Bsp.: Passwort mit Bedingungen</a></li>
+</ul>
+</li>
+<li><a href="#%C3%9Cbung">Übung</a></li>
+<li><a href="#Datum">Datum</a></li>
+<li><a href="#%C3%9Cbung-Sekunde-umrechnen">Übung: Sekunde umrechnen</a></li>
+<li><a href="#%C3%9Cbung-Korrektes-Datum">Übung: Korrektes Datum</a></li>
+<li><a href="#Fibonacci-Zahlen-errechnen">Fibonacci Zahlen errechnen</a></li>
+<li><a href="#">`</a></li>
+<li><a href="#UserForm">UserForm</a></li>
+<li><a href="#Beispiel-Passwort-Generator-mit-CheckBoxen">Beispiel: Passwort Generator mit CheckBoxen</a></li>
+<li><a href="#Zinsberechnung-inkl-Selbstzerst%C3%B6rung">Zinsberechnung (inkl. Selbstzerstörung)</a></li>
+<li><a href="#Zeichen-%C3%BCberpr%C3%BCfen">Zeichen überprüfen</a></li>
+<li><a href="#Anzahl-der-Zeichen-z%C3%A4hlen">Anzahl der Zeichen zählen</a></li>
+<li><a href="#Mid"><code>Mid$</code></a></li>
+<li><a href="#Zeichen-in-ASCII-Code-wandeln">Zeichen in ASCII Code wandeln</a></li>
+<li><a href="#%C3%9Cbung-Passwort-%C3%BCberpr%C3%BCfen">Übung: Passwort überprüfen</a></li>
+</ul>
+<h2 id="visual-basic">Visual Basic</h2>
+<blockquote>
+<p>Variable  :<br />
+Bereich im Arbeitsspeicher der eine genaue Adresse hat.</p>
+</blockquote>
+<h3 id="interpreter-vs-compiler">Interpreter vs. Compiler</h3>
+<blockquote>
+<p>Interpreter  :<br />
+Dolmetscher, übersetzt Zeile für Zeile und füht immer wieder (oder kontinuierlich) aus.</p>
+<p>Compiler  :<br />
+Einmalige Übersetzung des Codes.</p>
+</blockquote>
+<h3 id="dim">Dim</h3>
+<blockquote>
+<p><code>Dim</code>  :<br />
+Dimension bzw. Ausdehnung</p>
+</blockquote>
+<pre><code class="vb">Dim [VARIABLE] as [DATENTYP]
+</code></pre>
+
+<blockquote>
+<p>When <strong>Option Explicit On</strong> or <strong>Option Explicit</strong> appears in a file, you must explicitly declare all variables by using the Dim or ReDim statements. If you try to use an undeclared variable name, an error occurs at compile time. The Option Explicit Off statement allows implicit declaration of variables.</p>
+</blockquote>
+<h2 id="nassi-shneiderman-diagramm">Nassi-Shneiderman-Diagramm</h2>
+<ul>
+<li>DIN 66261</li>
+<li>strukturierte Programmierung
+zerlege in <strong>Teilprobleme</strong></li>
+</ul>
+<h3 id="sinnbilder">Sinnbilder</h3>
+<ul>
+<li>Immer in rechteckigen Struckturblöcken</li>
+<li>von oben nach unten</li>
+<li>leere Blöcke nur in Verzweigung</li>
+</ul>
+<h2 id="datentypen-vba">Datentypen VBA</h2>
+<blockquote>
+<p>Datentyp  :<br />
+<code>// ???</code></p>
+</blockquote>
+<ul>
+<li>Ein Bit mehr für +/(-)</li>
+</ul>
+<h3 id="tabelle">Tabelle</h3>
+<p><code>// unvollständif</code></p>
+<table>
+<thead>
+<tr>
+<th>VBA</th>
+<th>Beschreibung</th>
+<th>Größe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td>Ja/Nein</td>
+<td>2 Byte</td>
+</tr>
+<tr>
+<td>Byte</td>
+<td>Ganzzahlen 0-255</td>
+<td>1 Byte</td>
+</tr>
+<tr>
+<td>Integer</td>
+<td>Ganzzahlen -32.768 bis 32.767</td>
+<td></td>
+</tr>
+<tr>
+<td>String</td>
+<td>Texte</td>
+<td>Anz. Zeichen * 2</td>
+</tr>
+<tr>
+<td>Date</td>
+<td></td>
+<td>8 Byte</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>Gleitkommazahl (15 Stellen)</td>
+<td>8 Byte</td>
+</tr>
+<tr>
+<td>Single</td>
+<td>Gleitkommazahl (7 Stellen)</td>
+<td>8 Byte</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>4 Festkommastellen</td>
+<td>8 Byte</td>
+</tr>
+<tr>
+<td>Object</td>
+<td></td>
+<td>4 Byte</td>
+</tr>
+</tbody>
+</table>
+<h4 id="genauigkeit-von-gleitkommazahl-typen">Genauigkeit von Gleitkommazahl-Typen</h4>
+<p>| | Bitanzahl | Wertebereich von ... bis | signifikante Stellen |
+|---|---|---|---|---|
+| HALF | 16 | 3,1-10^-5^ | 6,6-10^4^ | 4 |
+| SINGLE, REAL | 32 | 1,5-10^-45^ | 3,4-10^38^ | 7--8 |
+| REAL | 48 | 2,9-10^-39^ | 1,7-10^38^ | 11--12 |
+| DOUBLE, REAL | 64 | 5,0-10^-324^ | 1,7-10^308^ | 15--16 |
+| REAL | 64 | 1,1-10^-306^ | 1,8-10^308^ | 15--16 |
+| EXTENDED | 80 | 1,9-10^-4951^ | 1,1-10^4932^ | 19--20 |</p>
+<h3 id="ganzzahlige-datentypen">Ganzzahlige Datentypen</h3>
+<h4 id="byte">byte</h4>
+<p>Dieser Datentyp kann ganze Zahlen von <strong>--128</strong> bis <strong>127</strong> speichern <strong>(8bit)</strong>.</p>
+<h4 id="short">short</h4>
+<p>Eine beliebige ganze Zahl von <strong>-32.768</strong> bis <strong>32.767</strong> passt in ein short <strong>(16bit)</strong>.</p>
+<h4 id="int">int</h4>
+<p>Der Standard-Zahlentyp umfasst ganze Zahlen von <strong>-2.147.483.648</strong> bis <strong>2.147.483.647</strong> <strong>(32bit)</strong>. Für die meisten Berechnungen ist dieser Raum ausreichend, wenn man jedoch beispielsweise die Weltbevölkerung angeben will reicht der Datentyp Integer nicht aus.</p>
+<h4 id="long">long</h4>
+<p>Für <em>Spezialfälle</em> gibt es noch das long. Mit <strong>-9.223.372.036.854.775.808</strong> bis <strong>9.223.372.036.854.775.807 (64bit)</strong> sollte dieser Wert sogar ausreichen, um die Staatsverschuldung der gesamten westlichen Welt abzuspeichern.</p>
+<h3 id="datentypen-zur-speicherung-von-gleitkommazahlen">Datentypen zur Speicherung von Gleitkommazahlen</h3>
+<p>Für Gleitkommazahlen gilt allgemein, je größer die gespeicherte Zahl, desto ungenauer der Wert.</p>
+<h4 id="float">float</h4>
+<p>Ein float kann Gleitkommazahlen abspeichern, jedoch hat auch ein float nur begrenzt Speicherplatz, worunter die Genauigkeit leidet <strong>(32bit)</strong>. Da standardmäßig double verwendet wird, müssen float-Zahlen mit einem f oder F markiert werden</p>
+<h4 id="double">double</h4>
+<p>Für Rechnungen mit Gleitkommazahlen empfehlen wir daher die Verwendung des double Datentyps. Er bietet doppelt so viel Platz wie ein float und ist normalerweise mehr als ausreichend <strong>(64bit)</strong>. Double ist der Standardtyp für Gleitkommazahlen.</p>
+<h3 id="boolsche-werte">Boolsche Werte</h3>
+<h4 id="boolean">boolean</h4>
+<p>Dieser Datentyp kann lediglich die Werte <strong>true (wahr)</strong> und <strong>false (unwahr)</strong> annehmen.</p>
+<h3 id="zeichen">Zeichen</h3>
+<h4 id="char">char</h4>
+<p>Für einzelne Zeichen verwendet man den Typ char. Hier stehen <strong>16bit</strong> zur Verfügung, das macht <strong>65.536</strong> Zeichen. Um einen Char zuzuweisen packt man ihn in einfache Anführungszeichen 'S' oder verwendet den Dezimalwert, z.B. 83. Weitere Möglichkeiten einen char zuzuweisen sind Hexadezimalwerte wie 0x0053 oder Unicode: \u0053.</p>
+<h3 id="zeichenketten">Zeichenketten</h3>
+<h4 id="string">String</h4>
+<p>Wenn mit ganze Zeichenketten gearbeitet werden soll, so kann man auf den String-Datentyp zurückgreifen. Eigentlich ist String kein Primitiver Datentyp, jedoch handelt es sich hierbei um eine Ausnahme (Strings sind im Prinzip Arrays, also Listen von Chars). Strings werden in doppelte Anführungszeichen gesetzt: "Das ist ein String!". <em>Außerdem können Strings eine beliebige Länge aufweisen.</em></p>
+<h2 id="escape-sequenzen">Escape Sequenzen</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zeilenumbruch:</td>
+<td>\n</td>
+</tr>
+<tr>
+<td>Hochkomma:</td>
+<td>\'</td>
+</tr>
+<tr>
+<td>Doppeltes Hochkomma:</td>
+<td>\"</td>
+</tr>
+<tr>
+<td>Backslash:</td>
+<td>\\</td>
+</tr>
+<tr>
+<td>Unicode XXXX (hexadezimal)</td>
+<td>\uXXXX</td>
+</tr>
+</tbody>
+</table>
+<h2 id="beispiel-programme">Beispiel Programme</h2>
+<p><em>In Excell / VB</em></p>
+<h3 id="beispiel-eingabetest">Beispiel Eingabetest</h3>
+<pre><code class="vb">Option Explicit
+
+Sub Eingabetest()           'Name des prog
+
+    Dim Kapital As Byte     'Varibale Kapital definiert
+
+    Kapital = InputBox(&quot;Eingabe des Kapitalwerts&quot;)
+
+    MsgBox (&quot;Der Wert des kapitals = &quot; &amp; Kapital &amp; &quot; Euro&quot;) 'Ausgabe des Text plus Werte
+
+                        ' Unterprog Ende
+End Sub
+</code></pre>
+
+<h4 id="struktugramm">Struktugramm</h4>
+<table>
+<thead>
+<tr>
+<th>EINGABETEST()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIM Kapital AS CURRENCY</td>
+</tr>
+<tr>
+<td>E: "Kaptial" ; Kapital</td>
+</tr>
+<tr>
+<td>A: "Wert" &amp; Kapital &amp; " Euro"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bsp-addieren">Bsp.: Addieren</h3>
+<pre><code class="vb">Sub Addieren()
+
+    Dim Z1 As Long
+    Dim Z2 As Long
+    Dim E As Long
+
+    Z1 = InputBox(&quot;1. Zahl eingeben!&quot;)
+    Z2 = InputBox(&quot;2. Zahl eingeben!&quot;)
+    E = Z1 + Z2
+    MsgBox (&quot;Das Ergebnis ist: &quot; &amp; E)
+
+End Sub
+</code></pre>
+
+<h4 id="struktugramm_1">Struktugramm</h4>
+<table>
+<thead>
+<tr>
+<th>ADDIEREN()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DIM "Z1; Z2; E AS Long</td>
+</tr>
+<tr>
+<td>E: "1. Zahl eingeben"; Z1</td>
+</tr>
+<tr>
+<td>E: "2. Zahl eingeben"; Z2</td>
+</tr>
+<tr>
+<td>E = Z1 + Z2</td>
+</tr>
+<tr>
+<td>A: "Das Ergebnis ist gleich " &amp; Ergebnis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="einfache-und-zweifache-verzweigung">Einfache und Zweifache Verzweigung</h2>
+<h3 id="einfache">Einfache</h3>
+<ul>
+<li>Nur wenn Bedingung true = Block1</li>
+<li>Anweisungsblock kann aus <strong>einer</strong> oder <strong>mehr</strong> Anweisungen bestehen.</li>
+<li>Wenn Bedingung false = Ablauf ohne Anweisung</li>
+</ul>
+<h3 id="zweifache">Zweifache</h3>
+<p><img alt="Zweifache Verzweigung" src="../images/Zweiseitige_Auswahl.png" /></p>
+<pre><code class="vb">If [BEDINGUNG] Then
+    Anweisung1
+    Anweisung2
+End if
+</code></pre>
+
+<h3 id="bsp">Bsp.:</h3>
+<pre><code class="vb">Sub rabatt()
+    Dim RG As Long
+
+    RG = InputBox(&quot;Wie hoch Rechnung?&quot;)
+    If RG &gt; 1000 Then
+        MsgBox &quot;10% Rabatt&quot;
+    Else: MsgBox &quot;Kein Rabatt!&quot;
+    End If
+
+End Sub
+</code></pre>
+
+<h2 id="fallauswahl">Fallauswahl</h2>
+<ul>
+<li>geeignet bei mehr als 3 Bedingungen</li>
+</ul>
+<h3 id="bsp-notenpogramm">Bsp.: Notenpogramm</h3>
+<p><strong>Aufgabe:</strong></p>
+<ul>
+<li>Input: Note</li>
+<li>Output: Bezeichnung / Error</li>
+</ul>
+<pre><code class="vb">Sub noten()
+    Dim NOTE As Byte
+
+    NOTE = InputBox(&quot;Geben Sie eine Note ein:&quot;)
+
+    Select Case NOTE
+        Case 1
+            MsgBox &quot;Sehr gut&quot;
+        Case 2
+            MsgBox &quot;Gut&quot;
+        Case 3
+            MsgBox &quot;Befriedigend&quot;
+        Case 4
+            MsgBox &quot;Ausreichend&quot;
+        Case 5
+            MsgBox &quot;Mangelhaft&quot;
+        Case 6
+            MsgBox &quot;Ungenügend&quot;
+        Case Else
+            MsgBox &quot;Gibt es nicht.&quot;
+        End Select
+End Sub
+</code></pre>
+
+<h3 id="alternative-losung-mit-switch">Alternative Lösung mit Switch</h3>
+<pre><code class="vb">Sub notenswitch()
+
+    Dim NOTE As Byte
+    Dim TEXT As String
+
+    NOTE = InputBox(&quot;Geben Sie eine Note ein:&quot;)
+        TEXT = Switch(NOTE = 1, &quot;Sehr gut&quot;, NOTE = 2, &quot;Gut&quot;, NOTE &gt;= 2, &quot;Gibt es nicht.&quot;)
+
+    ' Output:
+    MsgBox TEXT
+
+End Sub
+</code></pre>
+
+<h2 id="zahlerschleife">Zählerschleife</h2>
+<ul>
+<li>Kopfgesteuert</li>
+<li>Anzahl der Durchläufe festgelegt</li>
+<li>benötigt Zählvariable und einen Start- wie Endwert</li>
+<li>Ist der Endwert über oder unterschritten wird die Schleife verlassen</li>
+</ul>
+<blockquote>
+<p>Wiederholt die Anweisung solange die Bedingung wahr ist.</p>
+</blockquote>
+<pre><code> ___________
+|  _________| --#Kopfgesteuert
+| |
+|_|
+</code></pre>
+
+<h3 id="syntax">Syntax</h3>
+<pre><code class="vb">For [VARIABLE] = [STARTWERT] to [ENDWERT] Step [Schrittweite]
+</code></pre>
+
+<h3 id="beisp">Beisp.:</h3>
+<pre><code class="vb">Sub zaehlerschleife()
+
+    Dim i As Integer
+
+    For i = 1 To 5
+        MsgBox i
+    Next i
+
+    MsgBox i
+
+End Sub
+</code></pre>
+
+<h3 id="endlosschleife">Endlosschleife</h3>
+<pre><code class="vb">Sub zaehlerschleife()
+
+    Dim i As Integer
+
+    For i = 1 To 5
+        MsgBox i
+        i = 3
+    Next i
+
+    MsgBox i
+
+End Sub
+</code></pre>
+
+<p>Endlosschleife abbrechen: <code>STRG + C + Pause</code></p>
+<h3 id="zahler-mit-input">Zähler mit Input</h3>
+<pre><code class="vb">Sub usercount()
+
+    Dim A As Integer
+    Dim E As Integer
+    Dim S As Integer
+    Dim i As Integer
+
+    A = InputBox(&quot;Gib die Startzahl ein:&quot;)
+    E = InputBox(&quot;Gib die Endzahl ein:&quot;)
+    S = InputBox(&quot;Gib die Schrittweite ein:&quot;)
+
+    If A &lt;= E Then
+        S = Abs(S)
+    Else
+        S = Abs(S) * (-1)
+    End If
+
+    For i = A To E Step S
+        MsgBox i
+    Next i
+
+    MsgBox &quot;Ende erreicht.&quot;
+
+End Sub
+</code></pre>
+
+<h3 id="spiel-zahlenraten">Spiel: Zahlenraten</h3>
+<pre><code class="vb">Sub zahlenraten()
+
+    Dim Z As Integer
+    Dim R As Integer
+    Dim S As Byte
+    Dim i As Integer
+
+    Z = InputBox(&quot;Gib eine Zahl ein:&quot;)
+
+    S = 10
+
+    For i = S To 1 Step -1
+
+        R = InputBox(&quot;Rate die Zahl:&quot;)
+
+        If R = Z Then
+            Exit For
+        Else
+            If R &gt; Z Then
+                MsgBox &quot;kleiner...&quot;
+            Else
+                MsgBox &quot;größer...&quot;
+            End If
+
+        S = S - 1
+
+        MsgBox &quot;Noch &quot; &amp; S &amp; &quot; Versuche...&quot;
+        End If
+    Next i
+
+    If S &gt; 0 Then
+        MsgBox &quot;Gewonnen!&quot;
+    Else
+        MsgBox &quot;Leider verloren...&quot;
+    End If
+
+End Sub
+</code></pre>
+
+<h2 id="random-function">Random Function</h2>
+<pre><code class="vb">0    1
+[----[  ' 0 ist inkludiert, 1 ist ausgeschlossen '
+
+0    1
+[----]  ' 0 und 1 sind inkludiert '
+</code></pre>
+
+<pre><code class="vb">RND()*11        
+    ' Ergibt ein Rundungsungleichgewicht für 0 und 10. Deshalb unsaubere Zufallszahlen (o0 und 10 sind benachteiligt) '
+
+INT()
+INT(RND()*11)       
+    ' Um die Wahrscheinlichkeit auch für 0 und die 10 gleich mit 2-9 zu setzen und das Rundungsungleichgewicht auszugleichen '
+</code></pre>
+
+<h3 id="beispiel-spiel">Beispiel Spiel</h3>
+<pre><code class="vb">Sub randomeasyask()
+
+    Dim Z As Integer
+    Dim R As Integer
+    Dim i As Integer
+    Dim j As Byte
+    Dim x As Byte
+    Dim L As Integer
+    Dim MessageBoxButtons
+    Dim MessageBox
+
+    Z = Int(Rnd() * 1001)
+    j = 0
+    x = 0
+
+    For i = 10 To 1 Step -1
+
+line1:
+    Err.Clear
+    On Error Resume Next
+
+        R = InputBox(&quot;Rate die Zahl:&quot;)
+
+    If Err.Number = 13 Then
+        Dim Msg, Style, Title, Help, Ctxt, Response, MyString
+            Msg = &quot;Du hast keine Zahl eingegeben...&quot; &amp; vbCr &amp; &quot;Möchtest du weiter machen?&quot;
+            Style = vbYesNo + vbQuestion
+            Title = &quot;ACHTUNG!&quot;
+        Response = MsgBox(Msg, Style, Title, Help, Ctxt)
+            If Response = vbYes Then
+                GoTo line1
+            Else
+                GoTo line9
+            End If
+    End If
+
+        If R = Z Then
+            Exit For
+        Else
+
+            If R &gt; Z Then
+                MsgBox &quot;kleiner... Noch &quot; &amp; i - 1 &amp; &quot; Versuche...&quot;
+            Else
+                MsgBox &quot;größer... Noch &quot; &amp; i - 1 &amp; &quot; Versuche...&quot;
+            End If
+
+        End If
+
+        If j = 0 Then
+            If i = 1 Then
+                i = InputBox(&quot;Willst du neue Versuche? Gib eine Zahl zwischen 1 und 5 an.&quot; &amp; vbCr &amp; &quot;Wenn du KEINE Versuche mehr willst tippe 0 ein:&quot;) + 1
+                j = i + j
+            End If
+        End If
+
+        x = 10 + j - i       ' Zähler '
+    Next i
+
+    If i &gt; 0 Then
+        MsgBox &quot;Gewonnen! Mit &gt;&gt;&quot; &amp; x &amp; &quot;&lt;&lt; Versuchen.&quot;
+        If j &gt; 0 Then
+            MsgBox &quot;ABER du hast Hilfe gebraucht !&quot;
+        Else
+            MsgBox &quot;BRAVO! Du hast es ohne Hilfe geschafft!&quot;
+        End If
+    Else
+        MsgBox &quot;Leider verloren... Die Zahl war &gt;&gt;&quot; &amp; Z &amp; &quot; &lt;&lt;&quot; &amp; vbCr &amp; &quot;Du hast &gt;&gt;&quot; &amp; x &amp; &quot;&lt;&lt; Versuche gebraucht um zu versagen!&quot;
+    End If
+
+line9:
+End Sub
+</code></pre>
+
+<h3 id="ascii-code">ASCII Code</h3>
+<ul>
+<li>0 - 31<ul>
+<li><strong>Nicht druckbare Zeichen = Steuersignale</strong></li>
+</ul>
+</li>
+<li>32<ul>
+<li>Leertaste</li>
+</ul>
+</li>
+<li>48 - 57<ul>
+<li>Buchstaben ohne Sonderzeichen</li>
+</ul>
+</li>
+<li>65 - 90<ul>
+<li>Buchstaben ohne Sonderzeichen</li>
+</ul>
+</li>
+<li>97 + 122<ul>
+<li>Buchstaben ohne Sonderzeichen</li>
+</ul>
+</li>
+<li>127<ul>
+<li><code>Entf</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="bsp-in-vb">Bsp.: in VB</h4>
+<p>Für ASCII Zeichen von <code>32</code> bis <code>126</code>:</p>
+<pre><code class="bash">INT(RND() *95) +32
+ |   |     |    |
+ |   |     |    # hierdurch immer ab 32
+ |   |     # hierdurch 0 bis 94
+ |   # Zufallszahl (0,xxxx)
+ # Abrunden (zu ganzer Zahl)
+
+# Also 32 bis (32+94=) 126
+</code></pre>
+
+<h4 id="random-ascii-zeichen-ausgeben">Random ASCII Zeichen ausgeben</h4>
+<pre><code class="vb">Sub passw()
+
+    Dim Zahl As Integer
+    Dim Zeichen As String
+
+    Zahl = Int(Rnd() * 95) + 32
+    Zeichen = Chr(Zahl)
+    MsgBox Zeichen
+
+End Sub
+</code></pre>
+
+<h3 id="bsp-passwortgenerator">Bsp.: Passwortgenerator</h3>
+<pre><code class="vb">Sub passw()
+
+    Dim Zahl As Integer
+    Dim Zeichen As String
+    Dim i As Integer
+    Dim D As Integer
+
+    D = Int(Rnd() * 6) + 7
+
+    For i = D To 1 Step -1
+
+        Zahl = Int(Rnd() * 95) + 32
+        Zeichen = Zeichen + Chr(Zahl)
+
+    Next i
+
+    MsgBox &quot;Dein Passwort lautet: &quot; &amp; vbCr &amp; Chr(13) &amp; Zeichen
+    MsgBox &quot;Es hat &quot; &amp; D &amp; &quot; Zeichen&quot;
+
+End Sub
+</code></pre>
+
+<h2 id="kopfgesteuerte-schleife">Kopfgesteuerte Schleife</h2>
+<ul>
+<li>minimal <strong>0 Durchläufe</strong></li>
+</ul>
+<pre><code class="vb"> ____________________________
+| Solange bis Bedingung wahr |
+|   _________________________|
+|  |   Anweisungsblock 1     |
+|__|_________________________|
+</code></pre>
+
+<p>Zählschleife ist eine Kopfgesteuere Schleife aber nicht alle Kopfgesteuerten Schleifen sind Zählschleifen.</p>
+<pre><code class="vb">Do until [BEDINGUNGEN]  'solange bis true'
+-or-
+Do while [BEDINGUNGEN]  'solange true'
+    [Anweisung]
+Loop
+</code></pre>
+
+<h2 id="fugesteuerte-schleife">Fußgesteuerte Schleife</h2>
+<ul>
+<li>Minimal <strong>ein Durchlauf</strong></li>
+</ul>
+<pre><code class="vb"> _________________________
+|  |  Anweisungsblock 1   |
+|  |______________________|
+| Solange Bedingung wahr  |
+|_________________________|
+</code></pre>
+
+<ul>
+<li>Do<ul>
+<li>[Anweisung]</li>
+</ul>
+</li>
+<li>Loop <strong>Until</strong> (solange <strong>bis</strong> wahr)</li>
+<li>Loop <strong>While</strong> (<strong>solange</strong> wahr)</li>
+</ul>
+<pre><code class="vb">Do
+    [Anweisung]
+Loop until [BEDINGUNG]  'solange bis true'
+-or-
+Loop while [BEDINGUNG]  'solange true'
+</code></pre>
+
+<h3 id="bsp-passwortgenerator-fur-excell">Bsp.: Passwortgenerator für Excell</h3>
+<ul>
+<li>nur Großbuchstaben &amp; Zahlen</li>
+<li>7 bis 12 Zeichen lang</li>
+<li>schreibt in eine neue Excell-Tabelle</li>
+<li>8 Passwörter auf einmal pro Zelle</li>
+</ul>
+<pre><code class="vb">Sub testloop()
+    Dim i As Integer
+    Dim Z As Integer    'Zahl'
+    Dim P As String     'Passw'
+    Dim S As Integer    'Stellen'
+    Dim M As Integer    'Menge'
+
+    For M = 1 To 8      'Menge der Passwörter für Zellen'
+
+        S = Int(Rnd() * 6) + 7
+
+        For i = 1 To S
+            Do
+                Z = Int(Rnd() * 43) + 48
+            Loop Until Z &gt; 64 And Z &lt; 91 Or Z &gt; 47 And Z &lt; 58
+            P = P + Chr(Z)
+        Next i
+
+    ActiveCell.Value = P           'schreibe in Zelle'
+    ActiveCell.Offset(1, 0).Select  'wähle nächste Zelle'
+    P = &quot;&quot;                         'Variable leeren'
+    Next M
+
+    'MsgBox &quot;Dein Passwort ist &quot; &amp; pw &amp; &quot; und hat &quot; &amp; Ende &amp; &quot; Stellen.&quot;
+
+End Sub
+</code></pre>
+
+<h3 id="bsp-passwort-mit-bedingungen">Bsp.: Passwort mit Bedingungen</h3>
+<ul>
+<li>a-z, A-Z, 0-9, Sonderz.</li>
+<li>min. jeweils 1 von jedem Zeichen</li>
+<li>8 Zeichen lang</li>
+</ul>
+<pre><code class="vb">Sub loop2()
+
+    Dim PW As String 'Passwort'
+    Dim GB As Byte 'Groß'
+    Dim KB As Byte 'Klein'
+    Dim ZI As Byte 'Ziffer'
+    Dim SZ As Byte 'Sonderz.'
+    Dim Z As Byte 'Zufallszahl'
+    Dim i As Integer
+    Dim x As Integer
+
+    x = 0
+
+    Do
+        'reset variablen'
+        PW = &quot;&quot;     'leeren'
+        GB = 0
+        KB = 0
+        ZI = 0
+        SZ = 0
+
+        For i = 1 To 8      'Länge'
+
+            Z = Int(Rnd() * 94) + 33    'Zufallszahl'
+
+            PW = PW + Chr(Z)     'Passwort zusammen setzen + Z in Zeichen verwandeln'
+
+                Select Case Z
+                    Case 48 To 57
+                        ZI = 1
+                    Case 97 To 122
+                        KB = 1
+                    Case 65 To 90
+                        GB = 1
+                    Case Else
+                        SZ = 1
+                End Select
+        Next i
+
+        x = x + 1       'Zähler'
+
+    Loop While GB * KB * ZI * SZ = 0        'Loop solange 0 '
+
+    MsgBox &quot;Versuche: &quot; &amp; x &amp; Chr(13) &amp; &quot;Passwort:&quot; &amp; vbCr &amp; PW
+
+End Sub
+</code></pre>
+
+<h2 id="ubung">Übung</h2>
+<ul>
+<li>Excell Tabelle mit Passwortgenerator</li>
+<li>Zeichen variabel (4-16)</li>
+<li>Menge variabel (1-16)</li>
+<li>a-z, A-Z, 0-9, Sonderzeichen<ul>
+<li>min. eins von jedem Zeichen</li>
+</ul>
+</li>
+</ul>
+<pre><code class="vb">Sub doppelrandom()
+
+    Dim Lang As Byte
+    Dim Menge As Byte
+    Dim j As Integer
+    Dim i As Integer
+    Dim Z As Byte
+    Dim PW As String
+    Dim ZI As Byte
+    Dim GB As Byte
+    Dim KB As Byte
+    Dim SO As Byte
+    Dim x As Long
+    'Dim l As Integer
+    Dim y As Long
+
+
+    'Lies die Passwortlänge aus der Zelle B5 '
+    Lang = Range(&quot;c5&quot;).Value
+
+    'Beendet das Prog, wenn Länge zu kurz '
+    If Lang &lt; 4 Or Lang &gt; 16 Then
+        MsgBox &quot;Mindesten 4, maximal 16 Stellen!&quot;
+        Exit Sub
+    End If
+
+    'Lies Menge der Passw aus Zelle B6 '
+    Menge = Range(&quot;c6&quot;).Value
+
+    'Beendet Prog wenn zu viele Passwörter'
+    If Menge &gt; 16 Then
+        MsgBox &quot;Maximal 16 Passwörter auf einmal!&quot;
+        Exit Sub
+    End If
+
+    ' Wähle Zelle B5 aus'
+    Range(&quot;b5&quot;).Select
+
+    ' Lösche Inhalt'
+    Range(&quot;B5:B20&quot;).ClearContents
+    'For l = 16 To 1 Step -1
+        'ActiveCell.Value = &quot;&quot;
+        'ActiveCell.Offset(1, 0).Select
+    'Next l
+
+    ' Wähle ERNEUT Zelle B5 aus'
+    Range(&quot;b5&quot;).Select
+
+    For j = Menge To 1 Step -1
+
+    y = Range(&quot;c21&quot;).Value
+
+    Do
+
+    PW = &quot;&quot;
+    ZI = 0
+    KB = 0
+    GB = 0
+    SO = 0
+
+        For i = Lang To 1 Step -1
+        Randomize Timer     'Zufälliger Start des Excell RND()'
+
+            Z = Int(Rnd() * 90) + 33
+
+            Select Case Z
+                Case 48 To 57
+                    ZI = 1
+                Case 65 To 90
+                    GB = 1
+                Case 97 To 122
+                    KB = 1
+                Case Else
+                    SO = 1
+            End Select
+
+            PW = PW + Chr(Z)
+
+            x = x + 1
+
+        Next i
+    Loop Until ZI + GB + KB + SO = 4
+
+    ActiveCell.Value = PW
+    ActiveCell.Offset(1, 0).Select
+
+    Next j
+
+    'Rekordzähler'
+    If x &gt; y Then
+        y = x
+    Else
+        y = y
+    End If
+
+    Range(&quot;c20&quot;).Value = x
+
+    Range(&quot;c21&quot;).Value = y
+
+End Sub
+</code></pre>
+
+<hr />
+<h1 id="datum">Datum</h1>
+<h2 id="ubung-sekunde-umrechnen">Übung: Sekunde umrechnen</h2>
+<p>Rechnet Sekunden in Jahre[^1], Tage, Stunden, Minuten und Sekunden aus.</p>
+<p>[^1]: Der Einfachheit halber Rechnung in Jahren ohne Schaltjahre.</p>
+<pre><code class="vb">Sub datum()
+
+    Dim Z, y, t, S, M, Sek As Long
+
+    Z = InputBox(&quot;Bitte Sekunden eingeben&quot;)
+
+
+    y = Int(Z / 31536000)
+
+    t = Int((Z - y * 31536000) / 86400)
+
+    S = Int((Z - y * 31536000 - t * 86400) / 3600)
+
+    M = Int((Z - y * 31536000 - t * 86400 - S * 3600) / 60)
+
+    Sek = Z - y * 31536000 - t * 86400 - S * 3600 - M * 60
+
+    MsgBox &quot;Es sind ca. &quot; &amp; y &amp; &quot; Jahre &quot; &amp; t &amp; &quot; Tage &quot; &amp; S &amp; &quot; Stunden &quot; &amp; M &amp; &quot; Minuten und &quot; &amp; Sek &amp; &quot; Sekunden.&quot;
+
+End Sub
+</code></pre>
+
+<h2 id="ubung-korrektes-datum">Übung: Korrektes Datum</h2>
+<pre><code class="vb">Sub datumprüfen()
+
+    Dim M, Y, T, D As Long
+
+line1:
+
+    M = InputBox(&quot;Monat:&quot;)
+
+    If M &lt; 1 Or M &gt; 12 Then
+
+        MsgBox &quot;Falsche Monats-Angabe.&quot;
+
+        GoTo line1
+    Else
+
+    Y = InputBox(&quot;Jahr:&quot;)
+
+line2:
+
+        T = InputBox(&quot;Tag:&quot;)
+
+        Select Case M
+            Case 4, 6, 9, 11
+                D = 30
+            Case 2
+                If Y / 4 = 0 And Y / 100 &lt;&gt; 0 Or Y / 400 = 0 Then
+                    D = 29
+                Else
+                    D = 28
+                End If
+            Case Else
+                D = 31
+        End Select
+
+        If T &lt; 1 Or T &gt; D Then
+            MsgBox &quot;Falsche Tages-Eingabe.&quot;
+            GoTo line2
+        Else
+            MsgBox &quot;Das Datum ist gültig.&quot;
+        End If
+
+    End If
+
+End Sub
+</code></pre>
+
+<hr />
+<h1 id="fibonacci-zahlen-errechnen">Fibonacci Zahlen errechnen</h1>
+<blockquote>
+<p><strong>Fibonacci</strong>  :<br />
+Die Fibonacci-Folge ist die unendliche Folge von natürlichen Zahlen, die (ursprünglich) mit zweimal der Zahl 1 beginnt oder (häufig, in moderner Schreibweise) zusätzlich mit einer führenden Zahl 0 versehen ist. Im Anschluss ergibt jeweils die Summe zweier aufeinanderfolgender Zahlen die unmittelbar danach folgende Zahl:  </p>
+<p><code>0, 1, 1, 2, 3, 5, 8, 13, ...</code></p>
+</blockquote>
+<pre><code class="vb">Sub fibonacci()
+
+    Dim Z1, Z2, Zahl As Long
+
+    Zahl = Range(&quot;C3&quot;).Value
+
+    Z1 = 0
+    Z2 = 1
+
+    Range(&quot;a5:a99&quot;).ClearContents   ' Zellen leeren '
+
+    Range(&quot;a5&quot;).Value = Z1
+    Range(&quot;a6&quot;).Value = Z2
+    Range(&quot;a6&quot;).Select
+
+    While Z1 + Z2 &lt;= Zahl
+        ActiveCell.Offset(1, 0).Select
+        ActiveCell.Value = Z1 + Z2
+        Z2 = Z2 + Z1
+        Z1 = Z2 - Z1
+    Wend
+
+End Sub
+</code></pre>
+
+<hr />
+<h1 id="userform">UserForm</h1>
+<p>Unter: <code>Einfügen &gt; UserForm</code></p>
+<h2 id="beispiel-passwort-generator-mit-checkboxen">Beispiel: Passwort Generator mit CheckBoxen</h2>
+<pre><code class="vb">Private Sub CommandButton1_Click()
+
+    Dim PW As String 'Passwort'
+    Dim GB As Byte 'Groß'
+    Dim KB As Byte 'Klein'
+    Dim ZI As Byte 'Ziffer'
+    Dim SZ As Byte 'Sonderz.'
+    Dim Z As Byte 'Zufallszahl'
+    Dim i As Integer
+    Dim x As Integer
+
+    x = 0
+
+    If eingabe.Value &lt; 4 Then
+        MsgBox &quot;Bitte mindestens 4 Zeichen:&quot;
+        Exit Sub
+    End If
+
+    Do
+        'reset variablen'
+        PW = &quot;&quot;     'leeren'
+        GB = 0
+        KB = 0
+        ZI = 0
+        SZ = 0
+
+        If Zahl = False Then ZI = 1
+        If Klein = False Then KB = 1
+        If Gross = False Then GB = 1
+        If Sonder = False Then SZ = 1
+
+        For i = 1 To eingabe.Value      'Länge'
+
+            Z = Int(Rnd() * 94) + 33    'Zufallszahl'
+
+            PW = PW + Chr(Z)     'Passwort zusammen setzen + Z in Zeichen verwandeln'
+
+                Select Case Z
+                    Case 48 To 57
+                        If Zahl = True Then
+                            ZI = 1
+                        End If
+                    Case 97 To 122
+                        If Klein = True Then
+                            KB = 1
+                        End If
+                    Case 65 To 90
+                        If Gross = True Then
+                            GB = 1
+                        End If
+                    Case Else
+                        If Sonder = True Then
+                            SZ = 1
+                        End If
+                End Select
+        Next i
+
+        x = x + 1       'Zähler'
+
+    Loop While GB * KB * ZI * SZ = 0    'Loop solange 0 '
+
+    ausgabe.Caption = PW
+
+    versuche.Caption = x
+
+End Sub
+</code></pre>
+
+<h1 id="zinsberechnung-inkl-selbstzerstorung">Zinsberechnung (inkl. Selbstzerstörung)</h1>
+<pre><code class="vb">Private Sub Zinsrechner_Click()
+
+    Dim K, ZS, Z As Double
+    Dim T As Integer
+    Dim x, y As Byte
+
+
+    K = Kapital.Value
+    ZS = Zinssatz.Value / 100
+    T = Tage.Value
+
+    x = 0
+
+    Do
+
+    If x &gt; 0 Then
+        MsgBox &quot;Du Vollpfosten! Schon wieder verkehrt! Da du scheinbar einfach zu dumm bist begehe ich lieber einfach Selbstmord!&quot;
+        MsgBox &quot;3&quot;
+        MsgBox &quot;2&quot;
+        MsgBox &quot;1&quot;
+        MsgBox &quot;Good Bye!&quot;
+        Do
+        y = 1
+        Loop While y = 1
+    Else
+        If T &lt; 0 Then
+            MsgBox &quot;Du Idiot! Es gibt keine Minustage!&quot;
+            Tage.Value = InputBox(&quot;Tage (diesmal bitte in PLUS!):&quot;)
+        End If
+    End If
+
+    x = x + 1
+
+    Loop While T &lt; 0
+
+    Z = (K * ZS / 360) * T
+
+    'Zinsenausgabe.Caption = Z
+    Zinsenausgabe.Caption = Round(Z, 4)
+
+End Sub
+</code></pre>
+
+<h1 id="zeichen-uberprufen">Zeichen überprüfen</h1>
+<p>Beispiel:</p>
+<pre><code class="vb">ASC(Mid$(&quot;Variable&quot;, 2, 1))
+</code></pre>
+
+<h2 id="anzahl-der-zeichen-zahlen">Anzahl der Zeichen zählen</h2>
+<pre><code class="vb">LEN([ZEICHENKETTE])
+</code></pre>
+
+<h2 id="mid"><code>Mid$</code></h2>
+<p><em>Gibt Zeichenanzahl ab einer bestimmten Stelle aus einem Text.</em></p>
+<pre><code class="vb">Mid$([VARIABLE], [STELLE], [ANZAHLZEICHEN])
+</code></pre>
+
+<h2 id="zeichen-in-ascii-code-wandeln">Zeichen in ASCII Code wandeln</h2>
+<pre><code class="vb">Asc([ZEICHEN])
+</code></pre>
+
+<h2 id="ubung-passwort-uberprufen">Übung: Passwort überprüfen</h2>
+<ul>
+<li>Prüfen ob jeweils ein:</li>
+<li>Groß-</li>
+<li>Kleinbuchstabe</li>
+<li>Zahl und</li>
+<li>Sonderzeichen</li>
+</ul>
+<pre><code class="vb">Sub zeichenpruefen()
+
+    Dim M As Integer
+    Dim PW As String
+    Dim i As Byte
+    Dim ZI, GB, KB, SOZ As Byte
+    Dim Zahl, Klein, Gross, Sonder As Byte
+
+
+    PW = Range(&quot;b3&quot;).Value
+
+    M = Len(PW)
+
+    Zahl = 0
+    Gross = 0
+    Klein = 0
+    Sonder = 0
+
+    For i = 1 To M
+
+        Dim Z As Integer
+
+        Z = Asc(Mid$(PW, i, 1))
+
+        Select Case Z
+            Case 48 To 57
+                ZI = 1
+                Zahl = Zahl + 1
+            Case 65 To 90
+                GB = 1
+                Gross = Gross + 1
+            Case 97 To 122
+                KB = 1
+                Klein = Klein + 1
+            Case Else
+                SOZ = 1
+                Sonder = Sonder + 1
+        End Select
+
+    Next i
+
+    If ZI + KB + GB + SOZ &lt; 4 Then
+
+        MsgBox &quot;Das Passwort:   &quot; &amp; PW &amp; &quot;   ist:&quot; &amp; vbCr &amp; vbCr &amp; &quot;    UNGÜLTIG!&quot; &amp; vbCr &amp; vbCr &amp; &quot;Bitte versuche es noch einmal.&quot; &amp; vbCr &amp; &quot;Hier siehst du welches Zeichen fehlt:&quot; &amp; vbCr &amp; vbCr &amp; Zahl &amp; &quot; : Zahl(en)&quot; &amp; vbCr &amp; Gross &amp; &quot; : Großbuchst.&quot; &amp; vbCr &amp; Klein &amp; &quot; : Kleinbuchst.&quot; &amp; vbCr &amp; Sonder &amp; &quot; : Sonderz.&quot;
+    Else
+
+        MsgBox &quot;Das Passwort:   &quot; &amp; PW &amp; &quot;   ist:&quot; &amp; vbCr &amp; vbCr &amp; &quot;    GÜLTIG :)&quot; &amp; vbCr &amp; vbCr &amp; Zahl &amp; &quot; : Zahl(en)&quot; &amp; vbCr &amp; Gross &amp; &quot; : Großbuchst.&quot; &amp; vbCr &amp; Klein &amp; &quot; : Kleinbuchst.&quot; &amp; vbCr &amp; Sonder &amp; &quot; : Sonderz.&quot;
+    End If
+
+End Sub
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../LF 10v5 - Linux - LPIC-1/Network/Firewall/" title="Firewall in Linux" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Firewall in Linux
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../LF 6 - SQL/SQL - MS SQL Servermanagement Studio 18/" title="Microsoft SQL Servermanagement Studio 18" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Microsoft SQL Servermanagement Studio 18
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
